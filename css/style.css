@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+
+/*------------------------------navbar------------------------------*/
+
+#navbar {
+    height: 59px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.829);
+    position: sticky;
+    top: 0;
+  }
+  
+  #navbar ul {
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+  }
+  
+  #navbar ul li {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
+    border: none;
+  }
+  
+  #navbar ul li a {
+    margin: 0;
+    padding: 1rem;
+    border: none;
+    text-decoration: none;
+    color:rgb(109, 61, 254);
+    font-size: 16px;
+  }
+  
+  #navbar ul li a:hover {
+    color: #ffffff; 
+    border-bottom: 1px solid #ffffff; /* la animación parpadea cuando el borde es de 2px, pero no con 1px */
+    transition: 800ms ease;
+  }
+  
+  #navbar ul li a:active {
+    color: #090169;
+    border-bottom: 2px solid #090169;
+  }
+  
+
+/*------------------------------Contenedores/cartas------------------------------*/
+
+.contenedor_recomendados{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: center;
+  }
+  
+  .recomendado_tarjeta{
+    width: 30%;
+    height: 25vw;
+    margin: 5px;
+    background-color: #201f41;
+    border-radius: 5px;
+    position: relative;
+    transition: 500ms ease-in-out;
+  }
+  
+  .recomendado_tarjeta:hover{
+    scale: 103%;
+  }
+  
+  .recomendado_tarjeta img{
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+  }
+  
+  .texto_tarjeta{
+    padding-right: 10px ;
+    padding-left: 10px;
+    padding-top: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .tema{
+    text-align: center;
+    margin: 0 auto 0 0;
+    padding: 0 5px 0 5px;
+    font-size: 1vw;  
+    letter-spacing: 4px;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    text-decoration: none;
+  }
+  
+  .tema a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 200ms ease-in-out;
+  }
+  
+  .tema a:hover{
+    font-weight: 1000;
+  }
+  
+  .titulo{
+    margin-top: 1%;
+    font-weight: 800;
+    font-size: 1.5vw;
+    text-decoration: none;
+  }
+  
+  .titulo a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 200ms ease-in-out;
+  }
+  
+  .titulo a:hover{
+    filter: opacity(75%);
+  }
+  
+
+  /*------------------------------Footer------------------------------*/
+
+  footer{
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    height: 3rem;
+    margin-top: auto;
+    clear: both;
+    background-color: rgb(0, 0, 0); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer_bar{
+    margin: 0;  /*se lo agrego porque o sino no me quedan centrado los iconos en el footer*/
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  } 
+  
+  .footer_bar_items{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .footer_bar_icons{
+    color: rgba(255, 255, 255, 0.704);
+    transition: 700ms ease;
+  }
+  
+  .footer_bar_icons:hover{
+    color: rgb(90, 30, 218);
+  }
